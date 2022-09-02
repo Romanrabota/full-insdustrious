@@ -37,13 +37,18 @@ body {
 
 
 visibility:visible;
-
+z-index:2;
+transition: 0.5s ;
 }
+
+
 
 
 .listheader-menu{
 
 margin-top:15%;
+margin-left:5%;
+margin-right:5%;
 opacity:1;
 background-color: black;
 
@@ -67,6 +72,31 @@ transition: all 1s easy;
 
 
 
+
+
+
+
+.hrheaderlist{
+
+color:grey;
+width:45%;
+margin-left:0%;
+
+}
+
+
+.listtext{
+
+font-size: larger;
+
+
+}
+
+.listtext p{
+
+    color:grey;
+
+}
 
 
 
@@ -198,7 +228,6 @@ color:#817b7b;
 .text-feature{
 
 margin-top:40%;
-
 
 
 }
@@ -388,6 +417,7 @@ p .string{
    /* max-width: 50%;*/
     color:white;
     margin-top:-5%;
+    
 }
 
 .footer-article p{
@@ -396,6 +426,7 @@ p .string{
      margin-top: 4%;
      font-size: 1.17em;
      margin-top:10%;
+    
  }
 
  .link-list{
@@ -424,11 +455,24 @@ p .string{
 
  }
 
- .link-list hr{
+ ul.link-list hr{
 
      width:100%;
+     height:1px;  
+     background-color:grey; 
 
  }
+
+
+.line-list{
+    width:100%;
+    height:1px;  
+    background-color:grey; 
+    margin-top:4%;
+
+}
+
+
 
  .social-link{
 
@@ -448,12 +492,12 @@ p .string{
  }
 
  .line{
-
-    height:0.1%;   
+ /*   border-top:1px solid;*/
+    height:1px;   
     width: 270%;
-    font-weight: 10;
+    /*font-weight: 10;*/
  /* border-radius: 10%; */
-    background-color:#817b7b;
+   background-color:grey;
     margin-top:5%;
 
  }
@@ -463,9 +507,9 @@ p .string{
  }
 
  .organisation p{
-
     margin-top:15%;
     color:rgb(112, 108, 108);
+    
  }
 
  .feedback{
@@ -543,6 +587,7 @@ margin-left:10%;
     display:flex;
     flex-direction:row;
    /* justify-content: space-between; */
+   
 
 }
 
@@ -552,8 +597,9 @@ margin-left:10%;
     margin-left:10%;
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
-    width:57%;
+   justify-content: space-evenly;
+    width:70%;
+  
 }
 
 .position p{
@@ -566,6 +612,11 @@ margin-left:10%;
 
 margin-top:14%;
 color:red;
+
+}
+
+.job p{
+    margin-top:11%;
 
 }
 
@@ -597,5 +648,123 @@ margin-top:-5%;
 margin-top:2%;
 margin-left:3%;
 
+}
+
+
+
+
+/*@media screen and (min-width:300px) and (max-width :500px){
+
+body{
+
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;
+	vertical-align: baseline;*/
+   /* width:500px;
+   
+
+
+}
+
+
+header{
+
+width:100px;
+
+
+}
+
+}
+*/
+
+@media screen and (max-width: 400px){
+ :root {
+        font-size: 16px;
+       
+ }
+
+body{                               
+
+
+
+/*width:100%;*/
+width:100vw;
+/*min-width: 255%;*/
+overflow-y:hidden;  /*для вертикального*/
+overflow-x:hidden;  /*для горизонтального*/
+background-blend-mode: overlay;
+background-attachment: scroll;
+
+}
+
+
+
+.header {
+    /*min-width: 320px;
+    max-width: 480px;*/
+   /* max-width:100%;*/
+   width:100vw;
+}
+
+
+
+
+
+.menu{
+
+    display:flex;
+    flex-direction: row;
+    margin-right:15%;
+    
+    
+    }
+
+
+.menu:hover .container{
+
+
+    visibility:visible;
+    z-index:2;
+    transition: 0.5s ;
+    max-width:40vw;
+    }
+    
+    
+    
+    
+    .listheader-menu{
+    
+    margin-top:15%;
+    margin-left:5%;
+    margin-right:5%;
+    opacity:1;
+    background-color: black;
+    
+    }
+    
+    
+    .container{
+    
+    background-color: black;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:20%;
+    /*width:40%;*/
+    z-index:1;
+    visibility:hidden;
+    opacity:1;
+    transition: all 1s easy;
+    }
+    
+
+    .title-site h1{
+
+        font-size:250%;
+        font-weight:100;
+    }
 
 }
