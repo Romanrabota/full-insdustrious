@@ -22,7 +22,7 @@ body {
     font-size: 1rem;
     padding: 20px;
     justify-content: space-between;
-  /*  background-image: ;*/
+  
 
 }
 
@@ -107,8 +107,6 @@ font-size: larger;
 display:flex;
 flex-direction: row;
 
-
-
 }
 
 
@@ -189,7 +187,7 @@ margin-top: 15%;
 
 
 .features-wrapper {
-   /* background-color: rgb(238, 235, 235);*/
+   
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -201,7 +199,7 @@ margin-top: 15%;
 
 .card-wrapper {
 
-  /*  margin-bottom: 10%;*/
+  
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -272,6 +270,7 @@ margin-top:40%;
 }
 
 .feedback-wrapper {
+    width:100%;
 }
 
 
@@ -300,6 +299,7 @@ margin-top:40%;
 
     display: flex;
     flex-direction: column;
+    width:60%;
    
 }
 
@@ -331,21 +331,7 @@ margin-top:40%;
 
 }
 
-/*.card-wrapper flex-row  .flex-column stretch  .icon{
 
-  height:300px;      
-
-}*/
-
-
-
-
-
-/*.features-wrapper .flex-column-center .max-width  .flex-column-center h2 {
-
-    font-size: 10px;
-    
-}*/
 
 h2{
 
@@ -414,7 +400,6 @@ p .string{
 
 .footer-article h2{
     font-size:1.4em;
-   /* max-width: 50%;*/
     color:white;
     margin-top:-5%;
     
@@ -436,11 +421,7 @@ p .string{
 
  }
 
-
-
  .link-list h2{
-
-   /* max-width: 50%;*/
     color:white;
     font-size:1.2em;
     margin-top:-5%;
@@ -469,13 +450,9 @@ p .string{
     height:1px;  
     background-color:grey; 
     margin-top:4%;
-
 }
 
-
-
  .social-link{
-
     margin-left:20%;
  }
 
@@ -492,12 +469,9 @@ p .string{
  }
 
  .line{
- /*   border-top:1px solid;*/
     height:1px;   
     width: 270%;
-    /*font-weight: 10;*/
- /* border-radius: 10%; */
-   background-color:grey;
+    background-color:grey;
     margin-top:5%;
 
  }
@@ -509,24 +483,23 @@ p .string{
  .organisation p{
     margin-top:15%;
     color:rgb(112, 108, 108);
+    margin-left:-15%;
     
  }
 
  .feedback{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  /*  padding: 7em;*/
-     width:90%;
+    margin-right:5%;
+    margin-left:5%;
+    width:80%;
  } 
 
 
 .feedback-card {
-    width: 340px;  
-    /*width: 85%;*/
-    height: 280px;
-   /* border: 1px solid black;*/
+    width: 85%;
+    height: 100%;
     padding-right: 10%;
-   /* border-left:solid 0.5rem; */ 
     padding:8%;  
     background-color: white;
 }
@@ -543,9 +516,6 @@ p .string{
    
     height:150px;
     width: 250px;
-  /*  border-left: solid 0.5rem;
-    border-color: grey;
-    */
 }
 .info{
 
@@ -575,8 +545,6 @@ margin-left:10%;
 .pictfeedback{
 
     border-radius: 100%;
-    /*height:100px;
-    width: 200px;*/
     height:25%;
     width:20%;
 }
@@ -586,9 +554,7 @@ margin-left:10%;
     width:90%;
     display:flex;
     flex-direction:row;
-   /* justify-content: space-between; */
    
-
 }
 
 .position{
@@ -620,17 +586,27 @@ color:red;
 
 }
 
-.company p{
 
-/*margin-left:5%;*/
+.job1 p{
+    margin-top:9%;
+    font-size: 80%;
+ 
+ }
+ 
+ .job2 p{
+     margin-top:9%;
+     font-size: 80%;
+  
+  }
 
-}
+
+
+
 
 .list {
 
 display:flex;
 flex-direction:column;
-/*justify-content: space-evenly;*/
 margin-top:-5%;
 
 }
@@ -652,35 +628,7 @@ margin-left:3%;
 
 
 
-
-/*@media screen and (min-width:300px) and (max-width :500px){
-
-body{
-
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	/*font: inherit;
-	vertical-align: baseline;*/
-   /* width:500px;
-   
-
-
-}
-
-
-header{
-
-width:100px;
-
-
-}
-
-}
-*/
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 540px){
  :root {
         font-size: 16px;
        
@@ -688,12 +636,8 @@ width:100px;
 
 body{                               
 
-
-
-/*width:100%;*/
-width:100vw;
-/*min-width: 255%;*/
-overflow-y:hidden;  /*для вертикального*/
+width:100vw;                  
+overflow-y:auto;     /*для вертикального*/
 overflow-x:hidden;  /*для горизонтального*/
 background-blend-mode: overlay;
 background-attachment: scroll;
@@ -702,40 +646,148 @@ background-attachment: scroll;
 
 
 
-.header {
-    /*min-width: 320px;
-    max-width: 480px;*/
-   /* max-width:100%;*/
-   width:100vw;
+.flex-column-center p
+{
+   margin-top: 5%;
+   font-size: 1.05em; 
+   color:#555555;
+}
+
+.flex-column-center h2
+{
+  
+  width:50%;
+
+  
+}
+
+.card-wrapper {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width:120%;
+      margin-left:10%;
+  }
+
+
+
+  .banner {
+    min-height: 48vh;
+    max-height: 80vh;
+    background-color: #ce1b28;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.feedback-wrapper {
+    width:100%;
+    
+}
+
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
 }
 
 
 
 
+.feedback{
+    margin-right:20%;
+    margin-left:30%;
+     display:flex;
+     flex-direction: column;
+     width:100%;
+     
+ } 
+
+
+ .feedback-card {
+    margin-top:5%;
+    width: 85%;
+    height: 100%;
+    padding-right: 10%;
+    padding:8%;  
+    background-color: white;
+ }
+
+ .textonred {
+
+    font-size: 1.05em;
+    text-align: center;
+
+
+}
+
+.textonred p{
+
+   
+    color:white;
+
+}
+
+
+
+ .position p{
+
+    font-size: 80%;
+   margin-bottom:10%;
+    
+   }
+   
+   .name p{
+   
+   margin-top:14%;
+   color:red;
+   
+   }
+
+   .job p{
+    margin-top:11%;
+
+}
+
+.job1 p{
+   margin-top:8%;
+   font-size: 80%;
+
+}
+
+.job2 p{
+    margin-top:9%;
+    font-size: 80%;
+ 
+ }
+
+
+.header {
+   width:100vw;
+}
 
 .menu{
 
     display:flex;
     flex-direction: row;
-    margin-right:15%;
-    
-    
+    margin-right:15%;        
     }
 
 
 .menu:hover .container{
-
-
     visibility:visible;
     z-index:2;
     transition: 0.5s ;
-    max-width:40vw;
+    max-width:20vw;  
     }
-    
-    
-    
-    
-    .listheader-menu{
+            
+.listheader-menu{
     
     margin-top:15%;
     margin-left:5%;
@@ -746,14 +798,14 @@ background-attachment: scroll;
     }
     
     
-    .container{
+.container{
     
     background-color: black;
     position:fixed;
     top:0;
     bottom:0;
-    left:20%;
-    /*width:40%;*/
+    left:65%;
+   /* width:40%;*/
     z-index:1;
     visibility:hidden;
     opacity:1;
@@ -761,10 +813,143 @@ background-attachment: scroll;
     }
     
 
-    .title-site h1{
+.hrheaderlist{
+
+        color:grey;
+        width:100%;
+        margin-left:0%;
+        
+        }
+
+
+
+
+.title-site h1{
 
         font-size:250%;
         font-weight:100;
     }
 
+.parallax-wrapper h2{
+
+        width:100%;  
+    }  
+
+
+.feedback-wrapper h2{
+
+      width:100%;
+    }
+
+.footer {
+        background-color: #111111;
+        margin-top:8%; 
+        width:100%;
+    }
+    
+    
+.list-bottom{
+    
+        display:flex;
+        flex-direction:column;
+        width:100%;           
+}
+
+
+
+.footer-article h2{
+        font-size:1.2em;
+        color:white;
+        margin-top:-5%;
+        width:100%;       
+    }
+    
+.footer-article p{
+        
+         color:rgb(112, 108, 108);
+         margin-top: 4%;
+         font-size: 1.17em;
+         margin-top:10%;
+         width:100%;    
+}
+    
+.link-list{     
+      margin-left:-20%;
+      width:150%;    
+}
+        
+.link-list h2{    
+        color:white;
+        font-size:1em;
+        width:100%;
+        margin-top:5%; 
+        margin-left:30%;
+}
+    
+.link-list li{
+        color:rgb(165, 158, 158);
+        margin-top: 4%;
+        font-size: 1.17em;
+        margin-top:5%;            
+     }
+    
+ul.link-list hr{  
+width:100%;
+height:1px;  
+background-color:grey; 
+}
+    
+    
+.line-list{
+        width:100%;
+        height:1px;  
+        background-color:grey; 
+        margin-top:4%;
+    
+}
+    
+      
+.social-link{
+    
+        width:150%;
+        margin-top:15%;
+        margin-left:-5%; 
+}
+
+.social-link h2{
+    
+        font-size:1em;
+        color:white;
+        margin-top:-7%;
+        width:80%;
+        margin-left:20%;
+}
+
+.social-link li{
+    
+        color:rgb(112, 108, 108);
+     }
+    
+.line{
+        height:1px;   
+        width: 100%;
+        background-color:grey;
+}
+
+.list {
+    display:flex;
+    flex-direction:column;
+    margin-left:20%;    
+}
+
+.social-link li{
+        margin-top:10%;
+}
+    
+.organisation p{
+        margin-top:15%;
+        color:rgb(112, 108, 108);
+        width:100%;
+        margin-left:5%;               
+}
 }
